@@ -23,3 +23,5 @@ def generate_qrcode(text):
 
 url = input("Enter yout url: ")
 generate_qrcode(url)
+
+#Conversion of QR code for my users
