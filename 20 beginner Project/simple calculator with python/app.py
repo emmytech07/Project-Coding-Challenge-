@@ -52,3 +52,4 @@ while(True):
 
     elif choice == "e" or choice== "E":
         print("program ended")
+        quit()
