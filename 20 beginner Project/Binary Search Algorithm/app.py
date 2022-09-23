@@ -11,7 +11,7 @@ def SearchAlg(list, target):
     count = 0
 
     while(start <=end):
-        print(f"Counts {count} : str(list[start:end+1])")
+        print(f"Counts {count} : {str(list[start:end+1])})")
         
         count = count + 1
         middle = (middle + end) // 2
@@ -26,6 +26,6 @@ def SearchAlg(list, target):
     return -1
 
 mylist = [*range(10)]
-Element = 6
+Element = 3
 
-SearchAlg(list, Element)
+SearchAlg(mylist, Element)
