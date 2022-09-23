@@ -8,4 +8,7 @@ def main():
     print(f"Username : {username}")
     print(f"domain : {domain}")
     print(f"Extension : {extension}")
-main()
+    print()
+    
+while True:
+    main()
