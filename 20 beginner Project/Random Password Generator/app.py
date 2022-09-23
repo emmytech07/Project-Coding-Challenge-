@@ -5,9 +5,26 @@
 # If iniitial response is not, exist  the program
 
 import string
+import random
 
-print(string.ascii_letters)
-print(string.digits)
-print(string.punctuation)
-print(string.hexdigits)
-print(string.__all__)
+# print(string.ascii_letters)
+# print(string.digits)
+# print(string.punctuation)
+# print(string.hexdigits)
+# print(string.__all__)
+
+characters = list[string.ascii_letters + string.digits + string.punctuation + string.hexdigits]
+# print (characters)
+
+def generate_password():
+    password_length = int (input("Supply Your password length: "))
+
+    random.shuffle(characters)
+    print(characters)
+    password =[]
+    for x in range(password_length):
+        password.append(random.choice(characters))
+    random.shuffle(password)
+    password = "".join(password)
+
+generate_password()
