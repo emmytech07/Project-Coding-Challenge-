@@ -5,6 +5,7 @@
 import random
 
 def roll_dice():
+    # Copied Dictionary
     DICE_ART = {
     1: (
         "┌─────────┐",
@@ -16,7 +17,7 @@ def roll_dice():
     2: (
         "┌─────────┐",
         "│  ●      │",
-        "│    2     │",
+        "│    2    │",
         "│      ●  │",
         "└─────────┘",
     ),
