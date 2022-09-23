@@ -26,6 +26,6 @@ def SearchAlg(list, target):
     return -1
 
 mylist = [*range(10)]
-Element = 5
+Element = 9
 
 SearchAlg(mylist, Element)
