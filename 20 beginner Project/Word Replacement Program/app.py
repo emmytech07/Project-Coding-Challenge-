@@ -13,7 +13,7 @@
 
 
 def replace_word(string):
-    word1 = str(input("Input your word to be replace in string: "))
+    word1 = str(input("Input your word to be replace: "))
     word2 = str(input('Replaced with string: '))
     
     print(string.replace(word1, word2))
