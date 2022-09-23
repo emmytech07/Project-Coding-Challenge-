@@ -4,6 +4,7 @@
 # Print password 
 # If iniitial response is not, exist  the program
 
+
 import string
 import random
 
@@ -17,14 +18,27 @@ characters = list[string.ascii_letters + string.digits + string.punctuation + st
 # print (characters)
 
 def generate_password():
-    password_length = int (input("Supply Your password length: "))
+    password_length = int(input("Supply Your password length: "))
 
     random.shuffle(characters)
-    print(characters)
+    # print(characters)
+
     password =[]
+
     for x in range(password_length):
         password.append(random.choice(characters))
-    random.shuffle(password)
-    password = "".join(password)
 
-generate_password()
+    random.shuffle(password)
+
+    password = "".join(password)
+    print(password)
+
+option = input("Do you want to generate password? (Yes/No): ")
+
+if option == "Yes":
+    generate_password()
+elif option == "No":
+    print("Program ended")
+    quit()
+else:
+    print("Supply the correct options ")
