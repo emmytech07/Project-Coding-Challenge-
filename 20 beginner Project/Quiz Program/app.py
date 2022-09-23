@@ -8,7 +8,7 @@
 quiz = {
     "Questions 1": {
         "Question" :"What is my age",
-        "Answer": 22
+        "Answer": "22"
     },
     "Questions 2": {
         "Question" :"What is my Name",
@@ -25,3 +25,21 @@ quiz = {
 }
 
 score = 0
+
+for key, value in quiz.items():
+    print(value["Question"])
+    answer = input("Answer? ")
+
+    if answer.lower() == value['Answer'].lower():
+        print("Correct")
+        score = score +1 
+        print(f"Your score is: {score}")
+        print()
+    else:
+        print("wrong!")
+        print("The Answer is : " + value['Answer'])
+        print("Your score is: "+ str(score))
+        print()
+
+print(f"you got {score} out of 4 questions correctly")
+print("your Percentage score is: " + str(int(score/7 * 100) + "%"))
