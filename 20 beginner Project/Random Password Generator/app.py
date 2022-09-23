@@ -8,21 +8,21 @@
 import string
 import random
 
+
 # print(string.ascii_letters)
 # print(string.digits)
 # print(string.punctuation)
-# print(string.hexdigits)
+# print(string.hexdigits)24
 # print(string.__all__)
 
-characters = list[string.ascii_letters + string.digits + string.punctuation + string.hexdigits]
-# print (characters)
+characters = list(string.ascii_letters + string.digits + '!@#$%^&*()_+<>?:"{}')
+print (characters)
 
 def generate_password():
     password_length = int(input("Supply Your password length: "))
 
     random.shuffle(characters)
-    # print(characters)
-
+    
     password =[]
 
     for x in range(password_length):
