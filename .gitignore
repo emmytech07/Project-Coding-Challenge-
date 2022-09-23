@@ -127,4 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-Method 2.py
+# Method 2.py

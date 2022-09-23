@@ -1,3 +1,6 @@
+
+
+
 def addition(a, b):
     sum = a + b
     print(f"{a} + {b} = {sum}")
@@ -16,12 +19,35 @@ def Division(a, b):
 
 print("A: Addition")
 print("B: Subtraction")
-print("A: Multiplication")
-print("A: Division")
+print("C: Multiplication")
+print("D: Division")
+print("E: Exit")
 
-choice = (input("Input your choice"))
+choice = input("Input your choice: ")
 
-if choice == "A" // choice =='a':
+if choice == "A" or choice =='a':
     print('You Option for Addition')
-    a = int()
+    a = int(input("Input first number:  "))
+    b = int(input("Input first number:  "))
+    addition(a, b)
 
+elif choice == "B" or choice =='b':
+    print('You Option for Subtraction')
+    a = int(input("Input first number:  "))
+    b = int(input("Input first number:  "))
+    subtraction(a, b)
+
+elif choice == "C" or choice =='c':
+    print('You Option for Multiplication')
+    a = int(input("Input first number:  "))
+    b = int(input("Input first number:  "))
+    Multiplication(a, b)
+
+elif choice == "D" or choice =='d':
+    print('You Option for Division')
+    a = int(input("Input first number:  "))
+    b = int(input("Input first number:  "))
+    division(a, b)
+
+elif choice == "e" or choice== "E":
+    print("program ended")
