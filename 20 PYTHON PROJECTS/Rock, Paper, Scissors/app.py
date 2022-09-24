@@ -1,7 +1,8 @@
 import random
 
 exit = False
-
+userPoint = 0
+computerPoint = 0
 while exit == False:
     options = ['rocks', 'paper', 'scissors']
     userInput = input("Select rock, paper, scissor or exit: ")
@@ -17,3 +18,33 @@ while exit == False:
             print("Your Input is Rock")
             print("Computer Input is Rock")
             print("It is a tie")
+
+        elif computerInput.lower()=='paper'.lower():
+            print("Your Input is rock")
+            print("Computer Input is paper")
+            print("Computer wins")
+            computerPoint +=1
+
+        elif computerInput.lower()=='Scissors'.lower():
+            print("Your Input is rock")
+            print("Computer Input is Scissors")
+            print("You win")
+            userPoint +=1
+    
+    elif userInput.lower() == 'Paper'.lower():
+        if computerInput.lower()=='rock'.lower():
+            print("Your Input is Paper")
+            print("Computer Input is Rock")
+            print("It is a tie")
+
+        elif computerInput.lower()=='paper'.lower():
+            print("Your Input is paper")
+            print("Computer Input is paper")
+            print("Computer wins")
+            computerPoint +=1
+
+        elif computerInput.lower()=='Scissors'.lower():
+            print("Your Input is Scissors")
+            print("Computer Input is Scissors")
+            print("Computer wins")
+            userPoint +=1
