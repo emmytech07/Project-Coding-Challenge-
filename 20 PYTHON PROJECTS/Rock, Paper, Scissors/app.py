@@ -10,6 +10,7 @@ while exit == False:
 
     if userInput == "Exit":
         print("Game Ended")
+        print("Your point is: ", userPoint, " and computer point is: ", computerPoint)
         print("Good bye")
         exit = True
 
