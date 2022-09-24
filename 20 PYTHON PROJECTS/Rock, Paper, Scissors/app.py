@@ -8,65 +8,65 @@ while exit == False:
     userInput = input("Select rock, paper, scissors or exit: ")
     computerInput = random.choice(options)
 
-    if userInput.lower() == "Exit".lower():
+    if userInput == "Exit":
         print("Game Ended")
         print("Good bye")
         exit = True
 
-    if userInput.lower() == 'Rock'.lower():
-        if computerInput.lower()=='rock'.lower():
+    if userInput == 'rock':
+        if computerInput =='rock':
             print("Your Input is Rock")
             print("Computer Input is Rock")
             print("It is a tie")
 
-        elif computerInput.lower()=='paper'.lower():
+        elif computerInput=='paper':
             print("Your Input is rock")
             print("Computer Input is paper")
             print("Computer wins")
             computerPoint +=1
 
-        elif computerInput.lower()=='Scissors'.lower():
+        elif computerInput=='scissors':
             print("Your Input is rock")
             print("Computer Input is Scissors")
             print("You win")
             userPoint +=1
     
-    elif userInput.lower() == 'Paper'.lower():
-        if computerInput.lower()=='rock'.lower():
+    elif userInput == 'paper':
+        if computerInput=='rock':
             print("Your Input is Paper")
             print("Computer Input is Rock")
             print("You win")
             userPoint +=1
 
-        elif computerInput.lower()=='Paper'.lower():
+        elif computerInput=='paper':
             print("Your Input is Paper")
             print("Computer Input is paper")
             print("It is a tie")
             
 
-        elif computerInput.lower()=='Scissors'.lower():
+        elif computerInput=='scissors':
             print("Your Input is Paper")
             print("Computer Input is Scissors")
             print("Computer wins")
             computerPoint +=1
     
-    elif userInput.lower() == 'Scissors'.lower():
-        if computerInput.lower()=='rock'.lower():
+    elif userInput == 'scissors':
+        if computerInput=='rock':
             print("Your Input is Scissors")
             print("Computer Input is Rock")
             print("Computer win")
             computerPoint +=1
 
-        elif computerInput.lower()=='Paper'.lower():
+        elif computerInput=='paper':
             print("Your Input is Scissors")
             print("Computer Input is paper")
             print("You win")
             userPoint +=1
 
-        elif computerInput.lower()=='Scissors'.lower():
+        elif computerInput=='scissors':
             print("Your Input is Scissors")
             print("Computer Input is Scissors")
             print("It is a tie")
             
-    elif userInput.lower() != 'Rock'.lower() or userInput.lower() != 'Scissors'.lower() or userInput.lower() != 'Paper'.lower():
+    elif userInput != 'rock' or userInput != 'scissors' or userInput != 'paper':
         print('Invalid input')
