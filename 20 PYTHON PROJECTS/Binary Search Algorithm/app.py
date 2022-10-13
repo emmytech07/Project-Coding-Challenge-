@@ -13,6 +13,7 @@ def SearchAlg(list, target):
     while(start <=end):
         print(f"Counts {count} : {list[start:end+1]}")
         print(f"Counts {count} : {list[start:end+1]}")
+        print(f"Counts {count} : {list[start:end+1]}")
         
         count = count + 1
         middle = (middle + end) // 2
