@@ -1,6 +1,7 @@
 def main ():
     print("Conversion of Dollars to Pounds: ")
     print()
+    print()
 
     dollars = eval(input("Enter amount in dollars: "))
     pounds = convertToPounds(dollars)
